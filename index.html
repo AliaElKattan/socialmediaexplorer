@@ -4,6 +4,8 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPGFCSL1JE"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -12,8 +14,9 @@
         gtag('config', 'G-VPGFCSL1JE');
     </script>
     
-    <title>Decifer Studio</title>
+    <title>Social Media Explorer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contentStyle.css">
@@ -24,99 +27,137 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
 
-
-    <meta name=”twitter:card” content=”summary_large_image”>
-
-<meta name="twitter:title" content="Decifer Studio">
-<meta name="twitter:url" content="https://www.decifer.tech">
-<meta name="twitter:description" content="A creative tech studio deciphering emerging technology.">
-<meta name="twitter:image" content="https://www.decifer.tech/images/thealgorithm_title.jpg">
-
-
-
-<html itemscope itemtype="https://www.decifer.tech">
-<meta itemprop="name" content="Decifer Studio">
-<meta itemprop="description" content="A creative tech studio deciphering emerging technology.">
-<meta itemprop="image" content="https://www.decifer.tech/images/thealgorithm_title.jpg">
- 
-  <meta property="og:site_name" content="Decifer Studio">
-  <meta name="theme-color" content="#2251F8">
-
-
-<meta property="og:title" content="Decifer Studio">
-<meta property="og:url" content="https://www.decifer.tech">
-<meta property="og:description" content="A creative tech studio deciphering emerging technology.">
-<meta property="og:image" content="https://www.decifer.tech/images/thealgorithm_title.jpg">
-<meta property="og:type" content="website">
-
-
-
-
-    <script src="offline/p5_v1-4-0.js"></script>
-</head>
-
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io_glass/favicon.ico">
 
 
 
+    <!-- <script src="offline/p5_v1-4-0.js"></script> -->
+        <script src="script.js"> </script>
+
+
+</head>
+
+
+
+
 <body id="landing-body">
-    <div class="info-content">
-        <div id="landing-title-div" class="titles">DECIFER STUDIO</div>
+  
 
+  <div id="main-body">
+    <h1> SOCIAL MEDIA EXPLORER </h1>
+    <br><br>
+      <h2> what is social media to <i>you</i>? </h2>
+                    <form action="#">
+    <fieldset>
+        <label for="choiceA">social media is a(n) </label>
+        <select name="choiceA" id="choiceA">
+            <option value="Slower" >networking service</option>
+            <option value="Slow" >online resource</option>
+            <option value="Medium" selected="selected">web site and technological application</option>
+            <option value="Fast">user-driven platform</option>
+            <!-- <option value="Faster">internet-based, disentrained, and persistent channels of masspersonal communication</option> -->
+            <option value="Faster">public forum</option>
+            <option value="Faster">honey comb</option>
+            <option value="Faster">group of Internet-based applications</option>
+            <option value="Faster">web-based service</option>
+        </select>
+         <label for="choiceB">that </label>
+         <select name="choiceB" id="choiceB">
+            <option value="Slower">facilitates</option>
+            <option value="Slow"  selected="selected">allows</option>
+            <option value="Medium">enables</option>
+            <option value="Fast">consists of</option>
+        </select> 
+        <br>
+        <select name="choiceC" id="choiceC">
+            <option value="Slower">engagement between individuals</option>
+            <option value="Slow"  selected="selected">users to share content</option>
+            <option value="Medium">user interaction</option>
+            <!-- <option value="Fast">diffusion of compelling content, dialogue creation, and communication to a broader audience</option> -->
+              <option value="Slow"  selected="selected">perceptions of interactions among users</option>
+            <option value="Medium">the exchange of digital information</option>
+            <!-- <option value="Fast">identity, conversations, sharing, presence, relationships, reputation, and groups</option> -->
+            <option value="Fast">the creation and exchange of user-generated content</option>
 
-        <div id="info-body">
-            <div id="landing-body-div"> 
-                <!-- <h2> about </h2> -->
-                 <p> > A research & creative studio under construction, Decifer is founded by <a href="https://aliaelkattan.github.io/" target="_blank">Alia ElKattan</a> & <a href="https://lujainibrahim.com/" target="_blank">Lujain Ibrahim</a>.  </p>
+        </select>
 
-                <p> > We build <span style=" color:#ff316a">critical tech literacy</span> by demystifying how emerging technologies function <span style=" color: #ff316a">for broad audiences</span>. Our latest project, <a href="https://www.whatsthealgorithm.com">The Algorithm</a>, was funded by a <a href="https://foundation.mozilla.org/en/blog/announcing-11-projects-exploring-ai-and-responsible-design/">Mozilla Creative Media Award</a> and selected for the <a href="https://professionals.idfa.nl/forum/4b515d44-f972-4dad-8fa2-88b2cd53e563/the-algorithm/?offset=2">IDFA DocLab Forum</a>.</p>
+    </fieldset>
+</form>
 
+<!-- 
+<select class="text_select" id="field_6" name="field_6">    
+<option value="- Select -">- Select -</option>  
+<option value="Option One">Option One</option>  
+<option value="Option Two">Option Two</option>  
+<option value="Option Three">Option Three</option>  
+</select>
 
-               
-            </div>
-        </div>
+<label class="form_field">Your selected <span id="aggregator_name"></span>?</label>
 
-<div id="info-body">
-    <div id="landing-body-div" style="width: 58%">
-         <h2> CONTACT</h2>
-               <p> > For queries, collaborations, and more information, contact us at <a href="mailto:info@decifer.tech">info@decifer.tech</a>.</p>
-    </div>
-</div>
-
-       <div id="info-body">
-
-            <div id="landing-body-div" style="width: 58%"> 
-                 <h2> PROJECTS </h2>
-                 <p> > <a href="https://www.whatsthealgorithm.com">The Algorithm</a>: an interactive experience simulating algorithmically-curated video feeds to break down and demystify the algorithms powering our digital ecosystems. </p>
-            </div>
-        </div>
-
-
-                  <a href="https://www.whatsthealgorithm.com" target="_blank">
-    <img class="home-img" src="images/thealgorithm_title.jpg">
-</a>
-
-<br><br>
-
-<!--        <div id="info-body">
-            <div id="landing-body-div"> > <a href="multiplicity.tech">Multiplicity</a>: an online curation of geographically & disciplinarily diverse articles about the internet. <br> <i>Featured by the Webby Awards Responsible Tech report.</i>
-            </div>
-        </div>
-                    <a href="https://www.multiplicity.tech" target="_blank">
-    <img class="home-img" src="images/multiplicity.jpg">
-</a>
  -->
 
+<br><br> 
+
+<h2> alternative social media </h2>
+
+<p>of 34 platforms surveyed:<br><br></p>
+   
+<p>
+<span id="default_1" display="block">20</span><label class="form_field"> <span id="result_1"></span> are </label> 
+ 
+
+ <select class="text_select1" id="field_6" name="field_6">    
+<option value="20" selected="selected">text</option>  
+<option value="5">image</option>  
+<option value="3">video</option>  
+<option value="2">audio</option>  
+</select>
+based, 
+<span id="default_2" display="block">20</span><label class="form_field"> <span id="result_2"></span> are </label> 
+ 
+
+ <select class="text_select2" id="field_6" name="field_6">    
+<option value="17" selected="selected">federated</option>  
+<option value="4">peer to peer</option>  
+<option value="5">centralized</option>  
+</select>
+, and 
+<span id="default_3" display="block">10</span><label class="form_field"> <span id="result_3"></span> are </label> 
+ 
+
+ <select class="text_select3" id="field_6" name="field_6">    
+<option value="10" selected="selected">non-profit</option>  
+<option value="4">profitting off ads</option>  
+<option value="3">subscription-based</option>  
+</select>
+</p>.
 
 
-        <!-- <div id="header-div"> PROJECTS </div> -->
 
-<!--         <div id="landing-subtitle-div" class="subtitles">
-            <a class="subtitle" href="./">./projects</a>
-            <a class="subtitle" href="./">./contact</a>
-        </div> -->
+    
+<script>
+
+$('.text_select1').change(function(){
+    
+    $('#result_1').html($(this).val());
+    $('#default_1').hide();
+});
+
+$('.text_select2').change(function(){
+    
+    $('#result_2').html($(this).val());
+    $('#default_2').hide();
+});
+
+$('.text_select3').change(function(){
+    
+    $('#result_3').html($(this).val());
+    $('#default_3').hide();
+});
+
+</script>
 
 
 
-    </div>
+</div>
 </body>
