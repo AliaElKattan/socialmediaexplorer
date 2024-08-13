@@ -22,11 +22,23 @@ button{
 }
 
 .titles{
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Courier New', sans-serif;
 /*    color:#cbff70;*/
 color: var(--main-blue);
 /*    color: #1e1e1f;*/
 
+}
+
+
+#pies {
+    width: 80%;
+    margin-left: 12%;
+}
+
+#pie {
+    width: 30%;
+    display: inline;
+    float: left;
 }
 
 
@@ -75,10 +87,11 @@ body {
     margin: 0px;
     width: 100vw;
     height: 100dvh;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Courier New', monospace;
     overflow: hidden;
     touch-action: manipulation;
-background: var(--bg-color);
+/*background: var(--bg-color);*/
+background: white;
 color: #1e1e1f;
 
 }
@@ -94,10 +107,13 @@ padding-top: 5vh;
 }
 
 
-#main-body h1, h2, h3, p{
+
+#main-body p, h1, h2, h3 {
+    font-family: 'Lexend Deca', sans-serif;
     text-align: center;
-    font-family: 'JetBrains Mono', monospace;
 }
+
+h2 {color: rgb(0,0,200)}
 
 fieldset { border:0; 
 width: 70%;
@@ -111,22 +127,24 @@ text-align: center;}
 .wrap ul.ui-selectmenu-menu li a { 
     text-decoration: underline !important; 
     border: none;
-     font-family: 'JetBrains Mono', monospace;
+     font-family: 'Lexend Deca', sans-serif;
 }
 
 label, select {
     background-color: transparent;
     border: none;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 2vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.5vh;
+
 /*    line-height: 7vh;*/
 }
 
-p {font-size: 2vh;}
+p {font-size: 2.5vh;}
 
 
 select {
-    border-bottom: dotted 2px blue;
+    border-bottom: dotted 2px rgb(0,100,0);
+    color: rgb(0,100,0);
 }
 
 

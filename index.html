@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+        <script type="module" src="sample-chart.js"></script
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPGFCSL1JE"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -17,6 +19,7 @@
     <title>Social Media Explorer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contentStyle.css">
@@ -31,8 +34,10 @@
 
 
 
-    <!-- <script src="offline/p5_v1-4-0.js"></script> -->
-        <script src="script.js"> </script>
+    <script src="offline/p5_v1-4-0.js"></script>
+
+    <script src="script.js"> </script>
+    <script src="p5_sketch.js"></script>
 
 
 </head>
@@ -46,7 +51,7 @@
   <div id="main-body">
     <h1> SOCIAL MEDIA EXPLORER </h1>
     <br><br>
-      <h2> what is social media to <i>you</i>? </h2>
+      <h2> What is social media to <i>you</i>? </h2>
                     <form action="#">
     <fieldset>
         <label for="choiceA">social media is a(n) </label>
@@ -98,37 +103,37 @@
 
 <br><br> 
 
-<h2> alternative social media </h2>
+<h2 style="margin-top: 5vh"> Alternative social media </h2>
 
-<p>of 34 platforms surveyed:<br><br></p>
+<p>of <span style="color: rgb(0,0,200)">34</span> platforms surveyed:<br><br></p>
    
 <p>
-<span id="default_1" display="block">20</span><label class="form_field"> <span id="result_1"></span> are </label> 
+<span id="default_1" display="block" style="color: rgb(0,0,200)">20</span><label class="form_field"> <span id="result_1"></span> are </label> 
  
 
  <select class="text_select1" id="field_6" name="field_6">    
 <option value="20" selected="selected">text</option>  
-<option value="5">image</option>  
-<option value="3">video</option>  
-<option value="2">audio</option>  
+<option value="6">image</option>  
+<option value="8">video</option>  
+<option value="8">audio</option>  
 </select>
 based, 
-<span id="default_2" display="block">20</span><label class="form_field"> <span id="result_2"></span> are </label> 
+<span id="default_2" display="block" style="color: rgb(0,0,200)">20</span><label class="form_field"> <span id="result_2"></span> are </label> 
  
 
  <select class="text_select2" id="field_6" name="field_6">    
-<option value="17" selected="selected">federated</option>  
-<option value="4">peer to peer</option>  
-<option value="5">centralized</option>  
+<option value="15" selected="selected">federated</option>  
+<option value="6">peer to peer</option>  
+<option value="12">centralized</option>  
 </select>
 , and 
-<span id="default_3" display="block">10</span><label class="form_field"> <span id="result_3"></span> are </label> 
+<span id="default_3" display="block" style="color: rgb(0,0,200)">10</span><label class="form_field"> <span id="result_3"></span> are </label> 
  
 
  <select class="text_select3" id="field_6" name="field_6">    
 <option value="10" selected="selected">non-profit</option>  
-<option value="4">profitting off ads</option>  
-<option value="3">subscription-based</option>  
+<option value="10">profitting off ads</option>  
+<option value="5">subscription-based</option>  
 </select>
 </p>.
 
@@ -156,6 +161,17 @@ $('.text_select3').change(function(){
 });
 
 </script>
+
+<div style="padding-bottom: 20%">
+<h3>Landscape Breakdown </h3>
+
+<div id="pies">
+
+<div id="pie"><canvas id="pie-1"></canvas></div>
+<div id="pie"><canvas id="pie-2"></canvas></div>
+<div id="pie"><canvas id="pie-3"></canvas></div>
+
+</div>
 
 
 
