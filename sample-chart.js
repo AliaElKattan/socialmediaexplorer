@@ -1,7 +1,7 @@
-import Chart from 'chart.js/auto'
-import { Colors } from 'chart.js';
+// import Chart from 'chart.js/auto'
+// import { Colors } from 'chart.js';
 
-Chart.register(Colors);
+// Chart.register(Colors);
 
 (async function() {
   const data1 = [

@@ -1,31 +1,29 @@
 {
-  "name": "whatsthealgorithm",
+  "name": "socialmediaexplorer",
   "version": "1.0.0",
-  "description": "A web game exploring algorithmically-curated video feeds (e.g. TikTok, Instagram Reels) and the recommender systems that power them. The goal is to break down and demystify “The Algorithm” which we love to praise, blame, and game for our digital ecosystems.",
-  "main": "main.js",
   "type": "module",
   "scripts": {
     "start": "parcel index.html && node index.js",
-    "build": "parcel index.html && node index.js"
+    "predeploy": "rm -rf dist && parcel build index.html && node index.js --public-url https://aliaelkattan.github.io/socialmediaexplorer/",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "parcel": "^2.6.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whatsthealgorithm/whatsthealgorithm.git"
+    "url": "git+https://github.com/AliaElKattan/socialmediaexplorer.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/whatsthealgorithm/whatsthealgorithm/issues"
+    "url": "https://github.com/AliaElKattan/socialmediaexplorer/issues"
   },
-  "homepage": "https://github.com/whatsthealgorithm/whatsthealgorithm#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "proseplay": "^1.3.1",
     "@cubejs-client/core": "^0.31.0",
-    "chart.js": "^4.0.0"
+    "chart.js": "^4.0.0",
+    "express": "^4.18.2",
+    "gh-pages": "^6.1.1",
+    "proseplay": "^1.3.1"
   }
 }
-
