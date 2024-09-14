@@ -587,6 +587,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _auto = require("chart.js/auto");
 var _autoDefault = parcelHelpers.interopDefault(_auto);
+var _chartJs = require("chart.js");
+(0, _autoDefault.default).register((0, _chartJs.Colors));
 (async function() {
     const data1 = [
         {
@@ -628,10 +630,6 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
         {
             year: "Subscription",
             count: 5
-        },
-        {
-            year: "Privately financed",
-            count: 15
         }
     ];
     // new Chart(
@@ -657,7 +655,12 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
             datasets: [
                 {
                     label: "Acquisitions by year",
-                    data: data1.map((row)=>row.count)
+                    data: data1.map((row)=>row.count),
+                    backgroundColor: [
+                        "rgb(70, 70, 250)",
+                        "rgb(55,200,55)",
+                        "rgb(150,150,150)"
+                    ]
                 }
             ]
         },
@@ -677,7 +680,12 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
             datasets: [
                 {
                     label: "Acquisitions by year",
-                    data: data2.map((row)=>row.count)
+                    data: data2.map((row)=>row.count),
+                    backgroundColor: [
+                        "rgb(70, 70, 250)",
+                        "rgb(55,200,55)",
+                        "rgb(150,150,150)"
+                    ]
                 }
             ]
         },
@@ -697,7 +705,13 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
             datasets: [
                 {
                     label: "Acquisitions by year",
-                    data: data3.map((row)=>row.count)
+                    data: data3.map((row)=>row.count),
+                    backgroundColor: [
+                        "rgb(70, 70, 250)",
+                        "rgb(55,200,55)",
+                        "rgb(150,150,150)",
+                        "rgb(100,100,0)"
+                    ]
                 }
             ]
         },
@@ -712,15 +726,7 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
     });
 })();
 
-},{"chart.js/auto":"d8NN9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d8NN9":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _chartJs = require("../dist/chart.js");
-parcelHelpers.exportAll(_chartJs, exports);
-(0, _chartJs.Chart).register(...(0, _chartJs.registerables));
-exports.default = (0, _chartJs.Chart);
-
-},{"../dist/chart.js":"ipU8D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ipU8D":[function(require,module,exports) {
+},{"chart.js":"ipU8D","chart.js/auto":"d8NN9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ipU8D":[function(require,module,exports) {
 /*!
  * Chart.js v4.4.3
  * https://www.chartjs.org
@@ -14164,6 +14170,14 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["kGhOy","bMZA2"], "bMZA2", "parcelRequirebbfa")
+},{}],"d8NN9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _chartJs = require("../dist/chart.js");
+parcelHelpers.exportAll(_chartJs, exports);
+(0, _chartJs.Chart).register(...(0, _chartJs.registerables));
+exports.default = (0, _chartJs.Chart);
+
+},{"../dist/chart.js":"ipU8D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["kGhOy","bMZA2"], "bMZA2", "parcelRequirebbfa")
 
 //# sourceMappingURL=index.842e1359.js.map

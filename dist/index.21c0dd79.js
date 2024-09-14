@@ -85,10 +85,29 @@ let y1x2 = getQuadrant(decentralized, noAds);
 let y2x2 = getQuadrant(centralized, noAds);
 function setup() {
     createCanvas(windowWidth, height);
-// let y1x1 = getQuadrant(decentralized,ads);
-// let y2x1 = getQuadrant(centralized,ads);
-// let y1x2 = getQuadrant(decentralized, noAds);
-// let y2x2 = getQuadrant(centralized, noAds);
+    // let y1x1 = getQuadrant(decentralized,ads);
+    // let y2x1 = getQuadrant(centralized,ads);
+    // let y1x2 = getQuadrant(decentralized, noAds);
+    // let y2x2 = getQuadrant(centralized, noAds);
+    textSize(10);
+    mySelect = createSelect();
+    mySelect.position(520, 1010);
+    // Add color options.
+    mySelect.option("ads");
+    mySelect.option("green");
+    mySelect.option("blue");
+    mySelect.option("yellow");
+    // Set the selected option to "red".
+    mySelect.selected("ads");
+    mySelect2 = createSelect();
+    mySelect2.position(660, 1010);
+    // Add color options.
+    mySelect2.option("decentralization");
+    mySelect2.option("green");
+    mySelect2.option("blue");
+    mySelect2.option("yellow");
+    // Set the selected option to "red".
+    mySelect.selected("decentralization");
 }
 function getQuadrant(x, y) {
     let quadrant = [];
@@ -96,6 +115,7 @@ function getQuadrant(x, y) {
     return quadrant;
 }
 function draw() {
+    mySelect.selected();
     //axes lines
     //line width
     textFont("Lexend Deca");
@@ -105,9 +125,11 @@ function draw() {
     line(windowWidth / 2, height * (1 / 8), windowWidth / 2, height - height * (1 / 8));
     line(windowWidth / 5, height / 2, windowWidth - windowWidth / 5, height / 2);
     //main title
-    textSize(25);
-    fill(0, 0, 200);
-    text("Trends Explorer", windowWidth / 2 - 90, 50);
+    textSize(20);
+    // fill(0,100,0);
+    // text("Compare", windowWidth/3,20);
+    // fill("black");
+    // text("vs.",(windowWidth/2),20);
     //titles
     fill("black");
     textSize(18);

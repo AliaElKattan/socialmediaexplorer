@@ -5,7 +5,8 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "parcel index.html && node index.js"
+    "start": "parcel index.html && node index.js",
+    "build": "parcel index.html && node index.js"
   },
   "devDependencies": {
     "parcel": "^2.6.2"

@@ -1,4 +1,7 @@
 import Chart from 'chart.js/auto'
+import { Colors } from 'chart.js';
+
+Chart.register(Colors);
 
 (async function() {
   const data1 = [
@@ -17,8 +20,8 @@ import Chart from 'chart.js/auto'
     { year: "Crowdfunding", count: 20 },
     { year: "Ads", count: 10 },
     { year: "Sales", count: 2 },
-    { year: "Subscription", count: 5 },
-    { year: "Privately financed", count: 15}
+    { year: "Subscription", count: 5 }
+    // ,{ year: "Privately financed", count: 15}
   ];
 
   // new Chart(
@@ -47,7 +50,8 @@ import Chart from 'chart.js/auto'
         datasets: [
           {
             label: 'Acquisitions by year',
-            data: data1.map(row => row.count)
+            data: data1.map(row => row.count),
+             backgroundColor: ['rgb(70, 70, 250)', 'rgb(55,200,55)', 'rgb(150,150,150)']
           }
         ]
       },
@@ -72,7 +76,8 @@ import Chart from 'chart.js/auto'
         datasets: [
           {
             label: 'Acquisitions by year',
-            data: data2.map(row => row.count)
+            data: data2.map(row => row.count),
+            backgroundColor: ['rgb(70, 70, 250)', 'rgb(55,200,55)', 'rgb(150,150,150)']
           }
         ]
       },
@@ -96,7 +101,8 @@ import Chart from 'chart.js/auto'
         datasets: [
           {
             label: 'Acquisitions by year',
-            data: data3.map(row => row.count)
+            data: data3.map(row => row.count),
+            backgroundColor: ['rgb(70, 70, 250)', 'rgb(55,200,55)', 'rgb(150,150,150)', 'rgb(100,100,0)']
           }
         ]
       },
